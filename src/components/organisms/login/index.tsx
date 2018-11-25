@@ -56,7 +56,7 @@ export default withStyles(({ palette, spacing, breakpoints }) => ({
     marginLeft: spacing.unit * 3,
     marginRight: spacing.unit * 3,
     [breakpoints.up(400 + spacing.unit * 3 * 2)]: {
-      width: 400,
+      width: "80%",
       marginLeft: "auto",
       marginRight: "auto"
     }

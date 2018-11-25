@@ -13,7 +13,7 @@ export interface SigninProps {
 }
 
 export class SigninMol extends React.Component<SigninProps, {}> {
-  phrase: string;
+  phrase: string = "";
   constructor(props: SigninProps) {
     super(props);
     console.log({ props });
@@ -36,6 +36,7 @@ export class SigninMol extends React.Component<SigninProps, {}> {
             <div style={{ textAlign: "center" }}>
               <TextField
                 label="pass frase"
+                style={{ width: "90%" }}
                 onChange={e => {
                   this.phrase = e.target.value;
                 }}
